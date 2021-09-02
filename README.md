@@ -5,7 +5,7 @@
   Pretendo manter esse acervo com diversas máscaras de formatação de campos em algumas linguagens que conseguir implementar, para futuras consultas e também para ajudar desenvolvedores iniciantes que desejam ter uma idéia por onde começar.
   
  - [ ] Javascript
-   - [ ] Formatar Data ao digitar.
+   - [X] Formatar Data ao digitar.
    - [ ] Formatar CPF ao digitar.
    - [ ] Formatar Nome, primeira maiuscula ao digitar.
    - [ ] Formatar Telefone ao digitar.
