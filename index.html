@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Formatar Campos</title>
+		<link rel="icon" href="imagens/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<div class='pagina'>
+			<form>
+				<div class='cabecalho'>Formulário de Cadastro</div>
+                    <div class="linha">
+                        <div class="coluna">
+                            Data:
+                        </div>
+                        <div class="coluna">
+                            <input type='text' placeholder='__/__/____' maxlength='10' onkeyup="FormataData(this)" onkeydown="FormataData(this)" onblur="VerificaData(this)"/>
+                        </div>
+                        <div class="coluna">
+                            Válido: false
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="coluna">
+                            CPF:
+                        </div>
+                        <div class="coluna">
+                            <input type='text' placeholder='CPF' maxlength='11' onkeydown="Numerico(this)" onkeyup="Numerico(this)" onblur="document.getElementById('colCPF').innerHTML = 'Válido: ' + validaCPF(this.value);"/>
+                        </div>
+                        <div class="coluna" id="colCPF">
+                            Válido: false
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="coluna">
+                            CNS:
+                        </div>
+                        <div class="coluna">
+                            <input type='text' placeholder='CNS' maxlength='15' onkeydown="Numerico(this)" onkeyup="Numerico(this)" onblur="document.getElementById('colCNS').innerHTML = 'Válido: ' + validaCNS(this.value);"/>
+                        </div>
+                        <div class="coluna" id="colCNS">
+                            Válido: false
+                        </div>
+                    </div>
+                </div>
+			</form>
+		</div>
+
+        <script src="javascript/app.js"></script>
+	</body>
+</html>

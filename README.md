@@ -11,7 +11,8 @@
    - [ ] Formatar Telefone ao digitar.
    - [ ] Formatar Números com separadores decimais.
    - [ ] Converter Números para Extenso.
-   - [ ] ...
+   - [X] Validar CPF ao perder o foco.
+   - [X] Validar CNS ao perder o foco.
  - [ ] Java
    - [ ] Formatar Data ao digitar.
    - [ ] Formatar CPF ao digitar.
